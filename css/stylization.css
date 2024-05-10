@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.wrapper {
+  width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.title_link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #24A3FF;
+  text-transform: uppercase;
+}
+
+.title_link:hover {
+  color: #F0145A;
+}
+
+.block_subtitle {
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  color: transparent;
+  margin: 0;
+}
+
+.grid {
+  background-color: #323264;
+  padding-top: 10px;
+}
+.grid_cards_items {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.grid_cards {
+  width: 315px;
+}
+.grid_cards_image {
+  width: 92px;
+  height: 92px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  padding: 14px;
+}
+.grid_cards_title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #24A3FF;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.grid_cards_text {
+  margin: 0;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.clients {
+  background-color: #F5F5FA;
+  padding: 10px 0;
+}
+.clients_title {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #323264;
+}
+.clients_list_item {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients_hillel {
+  background-color: #1C4280;
+}
+.clients_wannabiz {
+  background-color: #143646;
+}
+.clients_tapgerine {
+  background-color: #F48B30;
+}
+.clients_three_d_look {
+  background-color: #9E4DC3;
+}
+.clients_orangear {
+  background-color: #FD9339;
+}
+.clients_adtelligend {
+  background-color: #E2E2E4;
+}
+.clients_clickky {
+  background-color: #C71C36;
+}
+.clients_eco_leasing {
+  background-color: #DCF3F9;
+}
+.clients_infratek {
+  background-color: #EAEAEA;
+}
+.clients_city_park {
+  background-color: #282240;
+}
+.clients_art_print {
+  background-color: #1D4568;
+}
+.clients_ultimate_card {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .grid_cards_list {
+    gap: 30px;
+  }
+  .clients_list_item:nth-child(n+7) {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 648px;
+  }
+  .grid_cards {
+    width: 294px;
+  }
+  .clients_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clients_list_item {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 904px;
+  }
+  .grid_cards {
+    width: 261px;
+  }
+  .clients_list_item {
+    width: 25%;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1320px;
+  }
+  .grid_cards {
+    width: 400px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1600px;
+  }
+  .grid_cards {
+    width: 493px;
+  }
+  .wrapper_clients {
+    width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=stylization.css.map */

@@ -1,0 +1,35 @@
+.grid {
+    background-color: #323264;
+    padding-top: 10px;
+    &_cards_items {
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+    &_cards {
+        width: 315px;
+        &_image {
+            width: 92px;
+            height: 92px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px;
+            padding: 14px;
+        }
+        &_title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 27px;
+            color: #24A3FF;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        &_text {
+            margin: 0;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+    }
+}

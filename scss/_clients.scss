@@ -1,0 +1,59 @@
+.clients {
+    background-color: #F5F5FA;
+    padding: 10px 0;
+    &_title {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #323264;
+    }
+    &_list {
+        &_item {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &_hillel {
+        background-color: #1C4280;
+    }
+    &_wannabiz {
+        background-color: #143646;
+    }
+    &_tapgerine {
+        background-color: #F48B30;
+    }
+    &_three_d_look {
+        background-color: #9E4DC3;
+    }
+    &_orangear {
+        background-color: #FD9339;
+    }
+    &_adtelligend {
+        background-color: #E2E2E4;
+    }
+    &_clickky {
+        background-color: #C71C36;
+    }
+    &_eco_leasing {
+        background-color: #DCF3F9;
+    }
+    &_infratek {
+        background-color: #EAEAEA;
+    }
+    &_city_park {
+        background-color: #282240;
+    }
+    &_art_print {
+        background-color: #1D4568;
+    }
+    &_ultimate_card {
+        background-color: #000000;
+    }
+}
