@@ -11,53 +11,47 @@ $wrapper: (
 );
 
 @media (max-width: map.get($wrapper, 'tablet')){
-    .grid_cards_list {
-        gap: 30px;
+    .clients_list {
+        grid-template-columns: 1fr;
+        &_item:nth-child(n + 7) {
+            display: none;
+        }
     }
-    .clients_list_item:nth-child(n + 7) {
-        display: none;
+    .grid_cards_items {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 @media (min-width: map.get($wrapper, 'tablet')){
     .wrapper {
         width: 648px;
     }
-    .grid_cards {
-        width: 294px;
+    .grid_cards_items {
+        grid-template-columns: repeat(2, 1fr);
     }
     .clients_list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .clients_list_item {
-        width: 33.33%;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (min-width: map.get($wrapper, 'laptop')){
     .wrapper {
         width: 904px;
     }
-    .grid_cards {
-        width: 261px;
+    .grid_cards_items {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .clients_list_item {
-        width: 25%;
+    .clients_list {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media (min-width: map.get($wrapper, 'desktopSD')){
     .wrapper {
         width: 1320px;
     }
-    .grid_cards {
-        width: 400px;
-    }
 }
 @media (min-width: map.get($wrapper, 'desktop')){
     .wrapper {
         width: 1600px;
-    }
-    .grid_cards {
-        width: 493px;
     }
     .wrapper_clients {
         width: 1720px;
@@ -65,11 +59,3 @@ $wrapper: (
         margin-right: auto;
     }
 }
-//.header {d
-//    margin-right: auto;
-//    margin-left: auto;
-//    &.title {
-//        font-size: $fs;
-//        line-height: $lh;
-//    }
-//}

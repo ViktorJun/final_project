@@ -1,13 +1,11 @@
 .grid {
     background-color: #323264;
     padding-top: 10px;
-    &_cards_items {
-        display: flex;
-        gap: 60px;
-        flex-wrap: wrap;
-    }
     &_cards {
-        width: 315px;
+        &_items {
+            display: grid;
+            gap: 60px;
+        }
         &_image {
             width: 92px;
             height: 92px;
