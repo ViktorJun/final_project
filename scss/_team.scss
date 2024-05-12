@@ -1,0 +1,45 @@
+.team {
+    &_slider {
+        background-color: #F5F5FA;
+        border-radius: 0 0 12px 12px;
+        &_image {
+            line-height: 0;
+        }
+        &_img {
+            width: 315px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+        &_content {
+            padding: 30px;
+            &_name {
+                font-weight: 700;
+                line-height: 19px;
+                color: #B3B3BA;
+                margin-bottom: 6px;
+            }
+            &_position {
+                font-size: 14px;
+                line-height: 22px;
+                color: #B3B3BA;
+                margin: 0;
+            }
+        }
+    }
+}
+.paginator {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.point {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(36, 163, 255, 0.2);
+    border-radius: 50%;
+}
+.blue {
+    background-color: #24A3FF;
+}

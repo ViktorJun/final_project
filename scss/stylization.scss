@@ -1,5 +1,6 @@
 @use 'stylization_base';
 @use 'grid';
+@use 'team';
 @use 'clients';
 @use 'sass:map';
 
@@ -32,6 +33,13 @@ $wrapper: (
     .clients_list {
         grid-template-columns: repeat(3, 1fr);
     }
+    .team_slider_img {
+        width: 648px;
+    }
+    .subtitle {
+        font-size: 38px;
+        line-height: 46px;
+    }
 }
 @media (min-width: map.get($wrapper, 'laptop')){
     .wrapper {
@@ -43,10 +51,21 @@ $wrapper: (
     .clients_list {
         grid-template-columns: repeat(4, 1fr);
     }
+    .team_slider_img {
+        width: 400px;
+        height: 527px;
+        border-radius: 12px 0 0 12px;
+    }
+    .team_slider {
+        display: flex;
+    }
 }
 @media (min-width: map.get($wrapper, 'desktopSD')){
     .wrapper {
         width: 1320px;
+    }
+    .team_slider_img {
+        height: 344px;
     }
 }
 @media (min-width: map.get($wrapper, 'desktop')){
@@ -57,5 +76,8 @@ $wrapper: (
         width: 1720px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .team_slider_img {
+        height: 298px;
     }
 }
