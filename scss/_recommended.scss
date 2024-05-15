@@ -1,0 +1,51 @@
+.recommended {
+    background-color: #F5F5FA;
+    &_card {
+        display: grid;
+        gap: 30px;
+        &_items {
+            background-color: #FFFFFF;
+            border-radius: 0 0 8px 8px;
+            &_img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 12px 12px 0 0;
+            }
+            &_content {
+                padding: 30px;
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
+
+                &_title {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    color: #24A3FF;
+                }
+                &_subtitle {
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 15px;
+                    letter-spacing: 1px;
+                    color: #B3B3BA;
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+                &_horizontal-rule {
+                    background-color: #E6E6F0;
+                    height: 4px;
+                    margin: 0;
+                    border: 0;
+                }
+                &_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

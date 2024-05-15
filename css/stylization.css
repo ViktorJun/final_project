@@ -81,7 +81,7 @@ body {
   line-height: 0;
 }
 .team_slider_img {
-  width: 315px;
+  width: 100%;
   height: 500px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
@@ -122,7 +122,7 @@ body {
 
 .clients {
   background-color: #F5F5FA;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 .clients_title {
   display: flex;
@@ -181,6 +181,57 @@ body {
   background-color: #000000;
 }
 
+.recommended {
+  background-color: #F5F5FA;
+}
+.recommended_card {
+  display: grid;
+  gap: 30px;
+}
+.recommended_card_items {
+  background-color: #FFFFFF;
+  border-radius: 0 0 8px 8px;
+}
+.recommended_card_items_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.recommended_card_items_content {
+  padding: 30px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.recommended_card_items_content_title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #24A3FF;
+}
+.recommended_card_items_content_subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #B3B3BA;
+  margin: 0;
+  text-transform: uppercase;
+}
+.recommended_card_items_content_horizontal-rule {
+  background-color: #E6E6F0;
+  height: 4px;
+  margin: 0;
+  border: 0;
+}
+.recommended_card_items_content_text {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .clients_list {
     grid-template-columns: 1fr;
@@ -203,12 +254,23 @@ body {
   .clients_list {
     grid-template-columns: repeat(3, 1fr);
   }
-  .team_slider_img {
-    width: 648px;
-  }
   .subtitle {
     font-size: 38px;
     line-height: 46px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .recommended_card {
+    grid-template-areas: "equity_associate gdpr" "millennial_testament millennial_testament";
+  }
+  .equity_associate {
+    grid-area: equity_associate;
+  }
+  .gdpr {
+    grid-area: gdpr;
+  }
+  .millennial_testament {
+    grid-area: millennial_testament;
   }
 }
 @media (min-width: 1024px) {
@@ -228,6 +290,9 @@ body {
   }
   .team_slider {
     display: flex;
+  }
+  .recommended_card {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1440px) {

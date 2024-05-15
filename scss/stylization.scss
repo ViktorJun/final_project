@@ -2,6 +2,7 @@
 @use 'grid';
 @use 'team';
 @use 'clients';
+@use 'recommended';
 @use 'sass:map';
 
 $wrapper: (
@@ -10,6 +11,7 @@ $wrapper: (
         desktopSD: 1440px,
         desktop: 1920px,
 );
+
 
 @media (max-width: map.get($wrapper, 'tablet')){
     .clients_list {
@@ -33,12 +35,25 @@ $wrapper: (
     .clients_list {
         grid-template-columns: repeat(3, 1fr);
     }
-    .team_slider_img {
-        width: 648px;
-    }
     .subtitle {
         font-size: 38px;
         line-height: 46px;
+    }
+}
+@media (min-width: map.get($wrapper, 'tablet')) and (max-width: map.get($wrapper, 'laptop')) {
+    .recommended_card {
+        grid-template-areas:
+        'equity_associate gdpr'
+        'millennial_testament millennial_testament';
+    }
+    .equity_associate {
+        grid-area: equity_associate;
+    }
+    .gdpr {
+        grid-area: gdpr;
+    }
+    .millennial_testament {
+        grid-area: millennial_testament;
     }
 }
 @media (min-width: map.get($wrapper, 'laptop')){
@@ -58,6 +73,9 @@ $wrapper: (
     }
     .team_slider {
         display: flex;
+    }
+    .recommended_card {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (min-width: map.get($wrapper, 'desktopSD')){
