@@ -121,8 +121,7 @@ body {
 }
 
 .clients {
-  background-color: #F5F5FA;
-  padding-top: 10px;
+  margin-top: 60px;
 }
 .clients_title {
   display: flex;
@@ -183,6 +182,7 @@ body {
 
 .recommended {
   background-color: #F5F5FA;
+  padding-top: 30px;
 }
 .recommended_card {
   display: grid;
@@ -314,6 +314,9 @@ body {
   }
   .team_slider_img {
     height: 298px;
+  }
+  .clients {
+    margin-bottom: 60px;
   }
 }
 
