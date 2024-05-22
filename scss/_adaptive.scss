@@ -1,13 +1,7 @@
+@use "variables";
 @use 'sass:map';
 
-$wrapper: (
-        tablet: 768px,
-        laptop: 1024px,
-        desktopSD: 1440px,
-        desktop: 1920px,
-);
-
-@media (max-width: map.get($wrapper, 'tablet')){
+@media (max-width: map.get(variables.$wrapper, 'tablet')){
     .clients_list {
         grid-template-columns: 1fr;
         &_item:nth-child(n + 7) {
@@ -19,9 +13,9 @@ $wrapper: (
         gap: 30px;
     }
 }
-@media (min-width: map.get($wrapper, 'tablet')){
+@media (min-width: map.get(variables.$wrapper, 'tablet')){
     .wrapper {
-        width: 648px;
+        padding: 0 60px;
     }
     .grid_cards_items {
         grid-template-columns: repeat(2, 1fr);
@@ -34,7 +28,7 @@ $wrapper: (
         line-height: 46px;
     }
 }
-@media (min-width: map.get($wrapper, 'tablet')) and (max-width: map.get($wrapper, 'laptop')) {
+@media (min-width: map.get(variables.$wrapper, 'tablet')) and (max-width: map.get(variables.$wrapper, 'laptop')) {
     .recommended_card {
         grid-template-areas:
         'equity_associate gdpr'
@@ -50,47 +44,36 @@ $wrapper: (
         grid-area: millennial_testament;
     }
 }
-@media (min-width: map.get($wrapper, 'laptop')){
-    .wrapper {
-        width: 904px;
-    }
+@media (min-width: map.get(variables.$wrapper, 'laptop')){
     .grid_cards_items {
         grid-template-columns: repeat(3, 1fr);
     }
     .clients_list {
         grid-template-columns: repeat(4, 1fr);
     }
-    .team_slider_img {
-        width: 400px;
-        height: 527px;
-        border-radius: 12px 0 0 12px;
-    }
     .team_slider {
         display: flex;
+        &_content {
+            border-radius: 0 12px 12px 0;
+        }
     }
     .recommended_card {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-@media (min-width: map.get($wrapper, 'desktopSD')){
-    .wrapper {
-        width: 1320px;
-    }
-    .team_slider_img {
-        height: 344px;
+    .try {
+        height: 100%;
+        width: auto;
+        border-radius: 12px 0 0 12px;
     }
 }
-@media (min-width: map.get($wrapper, 'desktop')){
-    .wrapper {
-        width: 1600px;
-    }
+@media (min-width: map.get(variables.$wrapper, 'desktopSD')){
+
+}
+@media (min-width: map.get(variables.$wrapper, 'desktop')){
     .wrapper_clients {
         width: 1720px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .team_slider_img {
-        height: 298px;
     }
     .clients {
         margin-bottom: 60px;

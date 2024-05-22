@@ -1,18 +1,12 @@
 .team {
     &_slider {
-        background-color: #F5F5FA;
-        border-radius: 0 0 12px 12px;
         &_image {
             line-height: 0;
         }
-        &_img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 12px 12px 0 0;
-        }
         &_content {
             padding: 30px;
+            background-color: #F5F5FA;
+            border-radius: 0 0 12px 12px;
             &_name {
                 font-weight: 700;
                 line-height: 19px;
@@ -42,4 +36,10 @@
 }
 .blue {
     background-color: #24A3FF;
+}
+.try {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
 }
