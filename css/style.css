@@ -611,6 +611,9 @@ body {
   .clients {
     margin-bottom: 60px;
   }
+  .wrapper {
+    padding: 0 160px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
