@@ -12,6 +12,20 @@
         grid-template-columns: 1fr;
         gap: 30px;
     }
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex_center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer_point {
+        display: none;
+    }
 }
 @media (min-width: map.get(variables.$wrapper, 'tablet')){
     .wrapper {
@@ -27,6 +41,33 @@
         font-size: 38px;
         line-height: 46px;
     }
+    .footer_content {
+        display: grid;
+    }
+    .footer_content {
+        grid-template-areas:
+        'footer_content_location footer_content_company'
+        'footer_content_contacts footer_content_contacts'
+    }
+    .footer_content_location {
+        grid-area: footer_content_location;
+    }
+    .footer_content_company {
+        grid-area: footer_content_company;
+    }
+    .footer_content_contacts {
+        grid-area: footer_content_contacts;
+    }
+    .flex_center {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer_content_company {
+        margin: 0;
+        text-align: right;
+    }
+
 }
 @media (min-width: map.get(variables.$wrapper, 'tablet')) and (max-width: map.get(variables.$wrapper, 'laptop')) {
     .recommended_card {

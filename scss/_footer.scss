@@ -1,0 +1,63 @@
+.footer {
+    padding: 30px 0;
+    background-color: #F5F5FA;
+    &_content {
+        margin-top: 30px;
+        &_location {
+            margin-bottom: 21px;
+            &_address {
+                color: #323264;
+                line-height: 19.5px;
+                margin: 0;
+            }
+            &_map {
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                color: #24A3FF;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+        &_contacts {
+            &_phone {
+                color: #46466E;
+            }
+            &_mail {
+                color: #24A3FF;
+            }
+            &_mail:hover {
+                color: #F0145A;
+            }
+        }
+        &_company {
+            color: #B3B3BA;
+            line-height: 19.5px;
+            margin: 20px 0 0 0;
+        }
+    }
+    &_horizontal-rule {
+        background-color: #E6E6F0;
+        height: 2px;
+        margin: 0;
+        border: 0;
+    }
+    &_point {
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: 50%;
+    }
+}
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 19.5px;
+}
+.facebook:hover {
+    g path {
+        fill: #F0145A;
+    }
+}
+

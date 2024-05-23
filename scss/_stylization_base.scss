@@ -16,9 +16,14 @@ body {
     letter-spacing: 1px;
     color: #24A3FF;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
 }
 .title_link:hover {
     color: #F0145A;
+}
+.title_link:hover svg path{
+    stroke: #F0145A;
 }
 .block_subtitle {
     background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);

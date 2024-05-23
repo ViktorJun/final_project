@@ -328,10 +328,16 @@ body {
   letter-spacing: 1px;
   color: #24A3FF;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 
 .title_link:hover {
   color: #F0145A;
+}
+
+.title_link:hover svg path {
+  stroke: #F0145A;
 }
 
 .block_subtitle {
@@ -539,6 +545,67 @@ body {
   margin: 0;
 }
 
+.footer {
+  padding: 30px 0;
+  background-color: #F5F5FA;
+}
+.footer_content {
+  margin-top: 30px;
+}
+.footer_content_location {
+  margin-bottom: 21px;
+}
+.footer_content_location_address {
+  color: #323264;
+  line-height: 19.5px;
+  margin: 0;
+}
+.footer_content_location_map {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #24A3FF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer_content_contacts_phone {
+  color: #46466E;
+}
+.footer_content_contacts_mail {
+  color: #24A3FF;
+}
+.footer_content_contacts_mail:hover {
+  color: #F0145A;
+}
+.footer_content_company {
+  color: #B3B3BA;
+  line-height: 19.5px;
+  margin: 20px 0 0 0;
+}
+.footer_horizontal-rule {
+  background-color: #E6E6F0;
+  height: 2px;
+  margin: 0;
+  border: 0;
+}
+.footer_point {
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.facebook:hover g path {
+  fill: #F0145A;
+}
+
 @media (max-width: 768px) {
   .clients_list {
     grid-template-columns: 1fr;
@@ -549,6 +616,20 @@ body {
   .grid_cards_items {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer_point {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -564,6 +645,30 @@ body {
   .subtitle {
     font-size: 38px;
     line-height: 46px;
+  }
+  .footer_content {
+    display: grid;
+  }
+  .footer_content {
+    grid-template-areas: "footer_content_location footer_content_company" "footer_content_contacts footer_content_contacts";
+  }
+  .footer_content_location {
+    grid-area: footer_content_location;
+  }
+  .footer_content_company {
+    grid-area: footer_content_company;
+  }
+  .footer_content_contacts {
+    grid-area: footer_content_contacts;
+  }
+  .flex_center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer_content_company {
+    margin: 0;
+    text-align: right;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
