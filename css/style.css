@@ -355,9 +355,70 @@ body {
   margin: 0;
 }
 
+.experience {
+  background-color: #323264;
+  padding-bottom: 30px;
+}
+.experience_scroll {
+  overflow: auto;
+  margin-bottom: 30px;
+}
+.experience_scroll_inner {
+  display: flex;
+}
+.experience_scroll_inner_layout {
+  padding-right: 30px;
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.experience_scroll_inner_layout:first-child {
+  margin-left: 30px;
+}
+.experience_scroll_item {
+  text-decoration: none;
+  color: #B3B3BA;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+}
+.experience_scroll_block {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+}
+.experience_scroll_first {
+  color: transparent;
+}
+.experience_list {
+  display: none;
+  gap: 30px;
+  flex-direction: column;
+}
+.experience_horizontal-rule {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  margin: 0;
+  border: 0;
+}
+.experience_content {
+  margin-top: 30px;
+}
+.experience_content_title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+}
+.experience_content_text {
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
 .grid {
   background-color: #323264;
-  padding-top: 10px;
 }
 .grid_cards_items {
   display: grid;
@@ -426,7 +487,7 @@ body {
   background-color: #24A3FF;
 }
 
-.try {
+.alex {
   height: 600px;
   width: 100%;
   object-fit: cover;
@@ -701,10 +762,24 @@ body {
   .recommended_card {
     grid-template-columns: repeat(3, 1fr);
   }
-  .try {
+  .alex {
     height: 100%;
     width: auto;
     border-radius: 12px 0 0 12px;
+  }
+  .experience_scroll {
+    display: none;
+  }
+  .experience_list {
+    display: flex;
+  }
+  .experience_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .experience_horizontal-rule {
+    transform: rotate(90deg);
+    width: 300px;
   }
 }
 @media (min-width: 1920px) {
