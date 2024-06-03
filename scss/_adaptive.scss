@@ -28,6 +28,12 @@
     }
 }
 @media (min-width: map.get(variables.$wrapper, 'tablet')){
+    .experience_wrapper {
+        padding: 0 60px;
+    }
+    .experience {
+        padding: 60px 0;
+    }
     .wrapper {
         padding: 0 60px;
     }
@@ -111,18 +117,31 @@
     }
     .experience_list {
         display: flex;
+        align-items: end;
+        padding: 15px 0;
+    }
+    .experience_content {
+        margin: 0;
+        align-content: center;
+        padding: 10px 0;
     }
     .experience_grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 124px 1fr;
+        position: relative; // добавим позиционирование родителя
     }
     .experience_horizontal-rule {
-        transform: rotate(90deg);
-        width: 300px;
+        width: 4px;
+        height: 100%; // используем 100% ширины для вертикальной линии
+        //position: absolute; // абсолютное позиционирование
+        //top: 0;
+        left: 50%; // размещаем по центру
     }
 }
 @media (min-width: map.get(variables.$wrapper, 'desktopSD')){
-
+    .experience_wrapper {
+        padding: 0 180px;
+    }
 }
 @media (min-width: map.get(variables.$wrapper, 'desktop')){
     .wrapper_clients {
@@ -135,6 +154,9 @@
     }
     .wrapper {
         padding: 0 160px;
+    }
+    .experience_wrapper {
+        padding: 0 280px;
     }
 
 }
